@@ -65,3 +65,8 @@ resource "random_id" "random" {
 output "random" {
   value = random_id.random.hex
 }
+
+output "a-long-string-and-title-how-long-do-you-think-these-things-can-get-before-it-breaks-something-i-dont-know-the-answer-do-you" {
+  value       = "DUPE The private integer of the main server instance is where you want to go when you have the most fun in every Terraform instance you can see in the world that you live in except for dogs because they don't run servers in the same place that humans do."
+  description = "A long string is good for you."
+}
