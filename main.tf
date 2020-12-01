@@ -125,7 +125,7 @@ output "a-long-string-and-title-how-long-do-you-think-these-things-can-get-befor
   value       = "DUPE The private integer of the main server instance is where you want to go when you have the most fun in every Terraform instance you can see in the world that you live in except for dogs because they don't run servers in the same place that humans do."
   description = "A long string is good for you."
 }
-{"example": 1001, "bar": 1000.1}
+
 output "larger-map" {
   value       = {
     "value": {
