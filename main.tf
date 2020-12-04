@@ -68,6 +68,11 @@ output "a-long-string" {
   description = "A long string is good for you."
 }
 
+output "a-long-unbroken-string" {
+  value       = "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz"
+  description = "A long, unbroken string is good for you."
+}
+
 output "a-big-int" {
   value       = 1234567890
   description = "A big int is good for you."
