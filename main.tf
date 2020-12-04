@@ -114,6 +114,24 @@ output "a-sensitive-value" {
   sensitive   = true
 }
 
+output "a-sensitive-number" {
+  value       = 867.5309
+  description = "The sensitive number of the main server instance."
+  sensitive   = true
+}
+
+output "a-sensitive-list" {
+  value       = [867, 5309]
+  description = "The sensitive list of the main server instance."
+  sensitive   = true
+}
+
+output "a-sensitive-map" {
+  value       = {867: 5309}
+  description = "The sensitive map of the main server instance."
+  sensitive   = true
+}
+
 resource "random_id" "random" {
   keepers = {
     uuid = uuid()
@@ -124,6 +142,11 @@ resource "random_id" "random" {
 
 output "random" {
   value = random_id.random.hex
+}
+
+output "a-long-list" {
+  value       = ["example", 1001, 1000.1, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, "DUPE The private integer of the main server instance is where you want to go when you have the most fun in every Terraform instance you can see in the world that you live in except for dogs because they don't run servers in the same place that humans do."]
+  description = "A long string is good for you."
 }
 
 output "a-long-string-and-title-how-long-do-you-think-these-things-can-get-before-it-breaks-something-i-dont-know-the-answer-do-you" {
