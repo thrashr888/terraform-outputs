@@ -144,6 +144,22 @@ output "random" {
   value = random_id.random.hex
 }
 
+output "html" {
+  value = "<b>BOLD TEXT</b>"
+}
+
+output "markdown" {
+  value = "*BOLD TEXT*"
+}
+
+output "html-script" {
+  value = "<script>alert('hacked');</script>"
+}
+
+output "javascript" {
+  value = "alert('hacked');"
+}
+
 output "a-long-list" {
   value       = ["example", 1001, 1000.1, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, "DUPE The private integer of the main server instance is where you want to go when you have the most fun in every Terraform instance you can see in the world that you live in except for dogs because they don't run servers in the same place that humans do."]
   description = "A long string is good for you."
